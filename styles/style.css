@@ -56,3 +56,31 @@ header {
 .btn-chrome {
   margin-right: 1rem;
 }
+
+/* ************* */
+/* Hero Section */
+/* ************* */
+.hero {
+  display: flex;
+  gap: 6rem;
+  padding: 7rem 0;
+}
+
+.hero-textbox {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.7rem;
+}
+
+.hero-style {
+  z-index: -1;
+  border-bottom-left-radius: 30%;
+  transform: translate(30%, 25%);
+}
+
+.hero-img {
+  transform: translate(5%, 0);
+  width: 100%;
+}
