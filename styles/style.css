@@ -210,3 +210,74 @@ header {
   border-bottom: #ccc dashed 1px;
   padding-bottom: 2rem;
 }
+
+
+/* ********* */
+/* FAQ section */
+/* ********* */
+.faq-section {
+  padding: 7rem 0;
+}
+
+.item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  border-top: 1px solid #ccc;
+}
+
+.item > .heading-tertiary {
+  padding: 2rem 0;
+  transition: all 0.3s;
+}
+
+.item > .heading-tertiary:hover {
+  color: rgba(250, 87, 87, 0.8);
+}
+
+.item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+.hidden-box {
+  grid-column: 1/-1;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.open {
+  border-top: 1px solid #fa5757;
+}
+
+.open .hidden-box {
+  padding-bottom: 2rem;
+  height: auto;
+  opacity: 100;
+  visibility: visible;
+}
+
+.open svg {
+  stroke: #fa5757;
+  transform: rotate(180deg);
+}
+
+.drop-down-icon {
+  width: 3rem;
+  stroke: #5368df;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-more-info {
+  display: inline-block;
+  margin-top: 5rem;
+}
