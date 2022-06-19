@@ -1,0 +1,58 @@
+/* ********** */
+/* Navbar */
+/* ********** */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}
+
+.top-navbar {
+  /* Review this */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem 3rem 3rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fa5757;
+}
+
+.nav-link.login:link,
+.nav-link.login:visited {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #fa5757;
+  margin-right: auto;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-link.login:hover,
+.nav-link.login:active {
+  background: #fff;
+  color: #fa5757;
+  box-shadow: inset 0 0 0 2px #fa5757;
+}
+
+.btn-chrome {
+  margin-right: 1rem;
+}
