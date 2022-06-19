@@ -158,3 +158,125 @@ header {
   transform: translate(-50%, 30%);
   z-index: -1;
 }
+
+/* ********* */
+/* FAQ section */
+/* ********* */
+.faq-section {
+  padding: 7rem 0;
+}
+
+.item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  border-top: 1px solid #ccc;
+}
+
+.item > .heading-tertiary {
+  padding: 2rem 0;
+  transition: all 0.3s;
+}
+
+.item > .heading-tertiary:hover {
+  color: rgba(250, 87, 87, 0.8);
+}
+
+.item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+.hidden-box {
+  grid-column: 1/-1;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.open {
+  border-top: 1px solid #fa5757;
+}
+
+.open .hidden-box {
+  padding-bottom: 2rem;
+  height: auto;
+  opacity: 100;
+  visibility: visible;
+}
+
+.open svg {
+  stroke: #fa5757;
+  transform: rotate(180deg);
+}
+
+.drop-down-icon {
+  width: 3rem;
+  stroke: #5368df;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-more-info {
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+/* *********** */
+/* Extension Section */
+/* *********** */
+.extension-section {
+  padding: 7rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  justify-content: center;
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  padding: 3rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.card:last-child {
+  margin-top: 4rem;
+}
+
+.card figure {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.card figure > div {
+  text-align: center;
+  width: 100%;
+  border-bottom: #ccc dashed 1px;
+  padding-bottom: 2rem;
+}
