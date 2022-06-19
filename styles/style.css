@@ -281,3 +281,45 @@ svg {
   display: inline-block;
   margin-top: 5rem;
 }
+
+
+/* ************** */
+/* Contact Section */
+/* ************* */
+.contact-section {
+  margin-top: 7rem;
+  background: #5368df;
+  color: #fff;
+  padding-top: 5rem;
+}
+
+.contact-section .mid-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-section .text-description {
+  color: #fff;
+}
+
+input {
+  padding: 1.2rem 3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="email"] {
+  padding-left: 1rem;
+  margin-right: 1rem;
+}
+
+input[type="submit"] {
+  background: #fa5757;
+  color: #fff;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
