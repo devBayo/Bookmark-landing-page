@@ -84,3 +84,77 @@ header {
   transform: translate(5%, 0);
   width: 100%;
 }
+
+/* *************** */
+/* Feature Section */
+/* *************** */
+.feature-section {
+  padding: 5rem 0 10rem 0;
+}
+
+.feature-description {
+  margin-bottom: 3rem;
+}
+
+.feature-tab-list {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.feature-tab {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.feature-tab:hover {
+  color: #fa5757;
+}
+
+.feature-active {
+  position: relative;
+  font-weight: 600;
+}
+
+.feature-active::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid #fa5757;
+}
+
+.feature-tab-box {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  opacity: 100;
+}
+
+.feature-tab-imagebox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feature-tab-image {
+  width: 90%;
+}
+
+.feature-tab-textbox {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.feature-tab-style {
+  border-bottom-right-radius: 30%;
+  transform: translate(-50%, 30%);
+  z-index: -1;
+}
